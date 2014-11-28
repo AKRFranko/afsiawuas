@@ -1,0 +1,117 @@
+html body {
+  font-family: 'Ubuntu Mono', sans-serif;
+  font-size: 15px;
+  background: #17191F;
+  box-sizing: border-box;
+}
+html body *,
+html body *:after,
+html body *:before {
+  box-sizing: border-box;
+}
+html body.directory {
+  display: block;
+  float: left;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+html body.directory #search {
+  outline: none;
+  position: absolute;
+  top: 2em;
+  right: 2em;
+  width: 6em;
+  font-size: 1em;
+  line-height: 1.5em;
+  border-radius: 2em;
+  padding: 0 1em;
+  border: 1px solid #111;
+  box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+html body.directory #search:focus,
+html body.directory #search:active {
+  width: 16em;
+}
+html body.directory a {
+  color: inherit;
+}
+html body.directory #wrapper {
+  display: block;
+  float: left;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+html body.directory #wrapper h1 {
+  display: block;
+  width: 100%;
+  text-align: left;
+  font-weight: bold;
+  font-size: 1em;
+  line-height: 1.5em;
+  color: #fff;
+  margin: 2em;
+  padding: 0;
+}
+html body.directory #wrapper h1 a {
+  font-weight: inherit;
+  font-size: inherit;
+  text-decoration: none;
+  color: inherit;
+}
+html body.directory #wrapper ul#files {
+  display: inline-block;
+  width: 80vmax;
+  height: 80min;
+}
+html body.directory #wrapper ul#files li {
+  vertical-align: top;
+  background: #f0f0f0;
+  border-radius: .2em;
+  border: 1px solid #fff;
+  box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.75);
+  display: inline-block;
+  min-width: 18vmin;
+  max-width: 18vmin;
+  min-height: 18vmax;
+  max-height: 18vmax;
+  margin-right: 2vmin;
+  margin-bottom: 2vmax;
+  width: 18min;
+  height: 18max;
+  margin-bottom: 3em;
+}
+html body.directory #wrapper ul#files li a {
+  position: relative;
+  display: block;
+  font-size: .75em;
+  border-radius: .2em;
+  border: 1px solid #000;
+  min-width: 18vmin;
+  max-width: 18vmin;
+  min-height: 18vmax;
+  max-height: 18vmax;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+html body.directory #wrapper ul#files li a *.highlight {
+  border-color: lime;
+}
+html body.directory #wrapper ul#files li a span {
+  user-select: none;
+  display: none;
+}
+html body.directory #wrapper ul#files li a .name {
+  display: inline-block;
+  position: absolute;
+  top: 100%;
+  margin-top: 1.5em;
+  left: 0;
+  width: 100%;
+  color: #fff;
+  white-space: nowrap;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

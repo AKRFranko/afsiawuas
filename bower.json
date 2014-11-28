@@ -1,0 +1,24 @@
+{
+  "name": "FDL",
+  "version": "0.0.0",
+  "authors": [
+    "akrfranko <franko@akr.club>"
+  ],
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "list.js": "~1.1.1",
+    "jquery": "~2.1.1",
+    "mimoza": "~0.3.0"
+  }
+}
